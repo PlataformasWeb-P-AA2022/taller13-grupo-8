@@ -26,7 +26,7 @@ def los_edificios():
 def los_departamentos():
     """
     """
-    r = requests.get("http://127.0.0.1:8000/api/numerost/",
+    r = requests.get("http://127.0.0.1:8000/api/departamentos/",
             auth=(user, password))
     datos = json.loads(r.content)['results']
     numero = json.loads(r.content)['count']
@@ -38,7 +38,7 @@ def los_departamentos():
 def los_departamentos_dos():
     """
     """
-    r = requests.get("http://127.0.0.1:8000/api/numerost/",
+    r = requests.get("http://127.0.0.1:8000/api/departamentos/",
             auth=(user, password))
     datos = json.loads(r.content)['results']
     numero = json.loads(r.content)['count']
