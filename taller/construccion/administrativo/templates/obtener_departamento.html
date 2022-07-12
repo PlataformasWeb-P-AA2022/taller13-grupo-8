@@ -1,0 +1,18 @@
+{% extends "master.html" %}
+
+{% block content %}
+
+<h3>Datos de Departamento</h3>
+
+<p><b>Nombre: </b>{{departamento.nombre_propietario}}</p>
+<p><b>Costo: </b>{{departamento.costo}}</p>
+<p><b>Numero de Cuartos: </b>{{departamento.numero_cuartos}}</p>
+<p><b>Edificio: 
+    <dd> Nombre: </b>{{departamento.edificio.nombre}}
+    <b><dd>Direccion: </b> {{departamento.edificio.direccion}}
+    <b><dd>Ciudad: </b>{{departamento.edificio.ciudad}}
+    <b><dd>Tipo: </b>{{departamento.edificio.tipo}}
+    </p>
+
+<br/>
+{% endblock %}
