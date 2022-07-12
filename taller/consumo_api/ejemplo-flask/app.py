@@ -44,9 +44,9 @@ def los_departamentos_dos():
     numero = json.loads(r.content)['count']
     datos2 = []
     for d in datos:
-        datos2.append({'nombre_prop':d['nombre_prop'], 
-        'costo_dep':d['costo_dep'], 
-        'num_cuartos':d['num_cuartos'],
+        datos2.append({'nombre_propietario':d['nombre_propietario'], 
+        'costo':d['costo'], 
+        'numero_cuartos':d['numero_cuartos'],
         'edificio': obtener_edificio(d['edificio'])})
     return render_template("losdepartamentosdos.html", datos=datos2,
     numero=numero)
